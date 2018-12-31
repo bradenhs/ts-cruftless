@@ -1,4 +1,4 @@
-## Introduction
+## Introduction (Work in Progress)
 
 > Lint away TypeScript's evolutionary cruft
 
