@@ -2,24 +2,46 @@
 
 > Lint away TypeScript's evolutionary cruft
 
-TypeScript is a fantastic tool but as it has evolved it's accumulated a fair amount of evolutionary cruft. For instance, built-in modules weren't part of JavaScript when TypeScript was first released. In order to bridge the gap, a useful feature called namespaces was included in the language. Today, however, namespaces aren't necessary - in fact, they're an ugly artifact and confuse newcomers. `ts-cruftless` is a collection of tslint rules that prevent you from using TypeScript specific features that fall under the "evolutionary cruft" umbrella. The goal is to keep your TypeScript code as close to idiomatic JavaScript as possible.
+Use the [TSLint](https://palantir.github.io/tslint/) rules in `ts-cruftless` to prevent introducing problematic and dated language features to your codebase. Find links to blog posts detailing the reasons for each rule below:
 
-Some of these rules clearly fall under the banner of "evolutionary cruft" - for others the categorization is less obvious. Feel free to open an issue and start a discussion if you disagree or feel another rule should be included.
+### Rules
 
-## Rules
+[**no-class-access-modifiers**](#TODO) (not yet published)
 
-**No class access modifiers**
+[**no-enums**](#TODO) (not yet published)
 
-**No enums**
+[**no-angle-bracket-type-assertions**](#TODO) (not yet published)
 
-**No angle bracket type assertions**
+[**no-abstract-classes-and-methods**](#TODO) (not yet published)
 
-**No abstract classes**
+[**no-namespaces-and-internal-modules**](#TODO) (not yet published)
 
-**No `export =` and `import =`**
+Do you think another rule should be included, disagree with with one of the rules listed, or have an idea for a better explanation? [File an issue](https://github.com/bradenhs/ts-cruftless/issues/new) to start a discussion about it.
 
-**No namespaces**
+## Getting Started
 
-**No internal modules**
+Install `ts-cruftless` just like you would any other dev dependency:
 
-**No triple slash directives**
+```
+npm install ts-cruftless --save-dev
+```
+
+Then in your `tslint.json` file extend `ts-cruftless`:
+
+```json
+{
+  "extends": ["ts-cruftless"]
+}
+```
+
+You can disable individual rules as follows:
+
+```json
+{
+  "extends": ["ts-cruftless"],
+  "rules": {
+    // Name of rule you'd like to disable, for example:
+    "no-class-access-modifiers": false
+  }
+}
+```

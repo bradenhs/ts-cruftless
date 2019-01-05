@@ -1,0 +1,12 @@
+{
+  "rulesDirectory": "rules",
+  "rules": {
+    // Already part of tslint
+    "no-angle-bracket-type-assertion": true,
+    "no-namespace": true,
+    // Custom
+    "no-class-access-modifiers": true,
+    "no-enums": true,
+    "no-abstract-classes-and-methods": true
+  }
+}

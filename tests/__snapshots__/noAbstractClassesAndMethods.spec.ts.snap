@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-abstract-classes-and-methods should emit no errors when source is valid 1`] = `""`;
+
+exports[`no-abstract-classes-and-methods should error when abstract class is present 1`] = `
+"/tests/cases/noAbstractClassesAndMethods/shouldErrorWhenAbstractClassIsPresent.ts
+The \\"abstract\\" keyword is not allowed no-abstract-classes-and-methods
+  1 | const foo = \\"bar\\";
+  2 | 
+> 3 | export abstract class AbstractClass {}
+    |       ^
+  4 |"
+`;
+
+exports[`no-abstract-classes-and-methods should give multiple errors if abstract is found multiple times 1`] = `
+"/tests/cases/noAbstractClassesAndMethods/shouldGiveMultipleErrorsIfAbstractIsFoundMultipleTimes.ts
+The \\"abstract\\" keyword is not allowed no-abstract-classes-and-methods
+> 1 | export abstract class Bar {
+    |       ^
+  2 |   abstract foo(): string;
+  3 | }
+  4 | 
+The \\"abstract\\" keyword is not allowed no-abstract-classes-and-methods
+  1 | export abstract class Bar {
+> 2 |   abstract foo(): string;
+    |  ^
+  3 | }
+  4 |"
+`;

@@ -2,10 +2,14 @@
   "name": "ts-cruftless",
   "version": "0.0.1",
   "description": "Lint away TypeScript's evolutionary cruft.",
-  "main": "index.js",
+  "main": "tslint.json",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
+  "files": [
+    "rules",
+    "tslint.json"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bradenhs/ts-cruftless.git"
@@ -15,5 +19,18 @@
   "bugs": {
     "url": "https://github.com/bradenhs/ts-cruftless/issues"
   },
-  "homepage": "https://github.com/bradenhs/ts-cruftless#readme"
+  "homepage": "https://github.com/bradenhs/ts-cruftless#readme",
+  "devDependencies": {
+    "@types/babel-code-frame": "^6.20.1",
+    "@types/jest": "^23.3.11",
+    "@types/lodash": "^4.14.119",
+    "@types/node": "^10.12.18",
+    "babel-code-frame": "^6.26.0",
+    "jest": "^23.6.0",
+    "lodash": "^4.17.11",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.12.0",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {}
 }

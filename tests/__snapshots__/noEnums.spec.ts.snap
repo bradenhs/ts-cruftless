@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-enums should emit no errors when no enums are present 1`] = `""`;
+
+exports[`no-enums should error when enum is present 1`] = `
+"/tests/cases/noEnums/shouldErrorWhenEnumIsPresent.ts
+ts-cruftless: Enums are not allowed. no-enums
+> 1 | enum Colors {
+  2 |   RED,
+  3 |   GREEN,
+  4 |   BLUE"
+`;
