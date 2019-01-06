@@ -1,6 +1,6 @@
 {
   "name": "ts-cruftless",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Lint away TypeScript's evolutionary cruft",
   "main": "tslint.json",
   "scripts": {
