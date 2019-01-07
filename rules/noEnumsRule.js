@@ -22,6 +22,7 @@ class NodeWalker extends Lint.RuleWalker {
    */
   visitEnumDeclaration(node) {
     this.addFailureAtNode(node, "ts-cruftless: Enums are not allowed.");
+    super.visitEnumDeclaration(node);
   }
 }
 
